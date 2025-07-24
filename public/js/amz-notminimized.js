@@ -190,9 +190,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const sck = [
         urlParams.get("utm_source"),
         urlParams.get("utm_medium"),
-        urlParams.get("utm_campaign"),
+        "b-voa-3",
         urlParams.get("utm_content"),
-        "b-voa-3"
+        urlParams.get("utm_term")
     ].join('|');
 
     
@@ -204,9 +204,9 @@ document.addEventListener("DOMContentLoaded", function () {
     `&sck=${sck}` +
     `&utm_source=${urlParams.get("utm_source")}` +
     `&utm_medium=${urlParams.get("utm_medium")}` +
-    `&utm_campaign=${urlParams.get("utm_campaign")}` +
+    `&utm_campaign=b-voa-3` +
     `&utm_content=${urlParams.get("utm_content")}` +
-    `&utm_term=b-voa-3` +
+    `&utm_term=${urlParams.get("utm_term")}` +
     `&email=${email_digitado.value}` +
     `&phoneac=${numero_completo}`;
 
